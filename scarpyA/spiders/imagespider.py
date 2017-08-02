@@ -11,4 +11,3 @@ class ImagespiderSpider(scrapy.Spider):
         item = ImageItem()
         item['image_urls'] = response.xpath('//img[@data-original]/@data-original').extract()
         return item
-        pass
